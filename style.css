@@ -125,7 +125,7 @@
     }
     
     
-    .education{
+    .education {
         background-image: url(cropped-1920-1080-943385.png);
         display: flex;
         justify-content: center;
@@ -135,31 +135,31 @@
         padding-bottom: 5rem;
     }
     
-    .education .educ-row{
+    .education .educ-row {
         display: flex;
         flex-wrap: wrap;
         gap: 5rem;
     }
     
-    .educ-row .educ-column{
+    .educ-row .educ-column {
         flex: 1 1 40rem;
     }
     
-    .educ-column .title{
+    .educ-column .title {
         color: white;
         font-size: 2.5rem;
         margin: 0 0 1.5rem;
     }
     
-    .educ-content .content{
+    .educ-content .content {
         position: relative;
         padding: 1.5rem;
         border: .2rem solid rgb(205, 202, 209);
         border-radius: .6rem;
         margin-bottom: 2rem;
     }
-    
-    .content{
+
+    .content {
         color: rgb(228, 109, 54);
     }
     
@@ -358,4 +358,97 @@
     #trademark p{
         font-size: 15px;
     }
+    
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .nav {
+            width: 40%;
+        }
+    }
+
+    @media screen and (min-width: 1025px) {
+        .main {
+            max-width: 1130px;
+        }
+        .Me-Text h2 {
+            font-size: 80px;
+        }
+        .Me-Text h5 {
+            font-size: 22px;
+        }
+        .Me-Text p {
+            font-size: 18px;
+        }
+        .About img {
+            width: 430px;
+        }
+        .Me-Text .tech img {
+            width: 70px;
+        }
+        .title h2 {
+            font-size: 75px;
+        }
+        .card,
+        .card2 {
+            width: 430px;
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .main {
+            flex-direction: column;
+        }
+        .Me-Text h2 {
+            font-size: 40px;
+        }
+        .Me-Text h5 {
+            font-size: 18px;
+        }
+        .Me-Text p {
+            font-size: 16px;
+        }
+        .Me-Text {
+            width: 100%;
+            text-align: center;
+        }
+        .About img {
+            width: 100%;
+        }
+        .Me-Text .tech img {
+            width: 50px;
+        }
+        .title h2 {
+            font-size: 40px;
+        }
+        .card,
+        .card2 {
+            width: 100%;
+            max-width: 300px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .educ-row .educ-column {
+            flex: 1 1 100%;
+        }
+    }
+    
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .educ-row .educ-column {
+            flex: 1 1 50%;
+        }
+    }
+    
+
+    @media screen and (min-width: 1025px) {
+        .educ-row .educ-column {
+            flex: 1 1 40rem;
+        }
+    }
+
+    
+    
+    
+    
+    
     
