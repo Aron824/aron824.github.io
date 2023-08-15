@@ -24,6 +24,19 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    .logo{
+        animation: flip 3s infinite linear;
+    }
+    
+    @keyframes flip {
+        0%, 100% {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+        50% {
+            transform: perspective(1000px) rotateY(180deg);
+        }
+    }
     
     .text{
         margin-left: 8%;
@@ -157,14 +170,21 @@
         border: .2rem solid rgb(205, 202, 209);
         border-radius: .6rem;
         margin-bottom: 2rem;
+        
     }
+
+    .educ-content:hover{
+        transform: translate(-10px);
+        transition: 0.5s, transform 0.5s;
+    }
+
+
 
     .content {
         color: rgb(228, 109, 54);
     }
     
-    
-    
+
     .main .tech{
         color: white;
         font-size: 30px;
@@ -179,18 +199,32 @@
         max-width: 100%;
         height: auto;
     }
+
+    .tech .cplass:hover {
+        animation: bounce 0.6s infinite alternate;
+    }
+
     
     .tech .java{
         width: 70px;
         max-width: 100%;
         height: auto;
     }
-    
+
+    .tech .java:hover {
+        animation: bounce 0.6s infinite alternate;
+    }
+
     .tech .python{
         width: 70px;
         max-width: 100%;
         height: auto;
     }
+
+    .tech .python:hover {
+        animation: bounce 0.6s infinite alternate;
+    }
+    
     
     .tech .javascript{
         width: 70px;
@@ -198,12 +232,28 @@
         height: auto;
     }
     
+    .tech .javascript:hover {
+        animation: bounce 0.6s infinite alternate;
+    }
+
     .tech .dart{
         width: 70px;
         max-width: 100%;
         height: auto;
     }
+
+    .tech .dart:hover {
+        animation: bounce 0.6s infinite alternate;
+    }
     
+    @keyframes bounce {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-10px);
+        }
+    }
     
     .card2{
         cursor: pointer;
